@@ -73,8 +73,8 @@ public class SpaceFXView extends BorderPane {
     private static final long                                 ENEMY_BOSS_ATTACK_INTERVAL = 20_000_000_000l;
     private static final long                                 CRYSTAL_SPAWN_INTERVAL     = 25_000_000_000l;
     private static final Random                               RND                        = new Random();
-    private static final double                               WIDTH                      = 700 * SCALING_FACTOR;
-    private static final double                               HEIGHT                     = 900 * SCALING_FACTOR;
+    public  static final double                               WIDTH                      = 700 * SCALING_FACTOR;
+    public  static final double                               HEIGHT                     = 900 * SCALING_FACTOR;
     private static final double                               FIRST_QUARTER_WIDTH        = WIDTH * 0.25;
     private static final double                               LAST_QUARTER_WIDTH         = WIDTH * 0.75;
     private static final double                               SHIELD_INDICATOR_X         = WIDTH * 0.73;
@@ -195,7 +195,7 @@ public class SpaceFXView extends BorderPane {
 
     public SpaceFXView() {
         init();
-        setupBinding();
+        //setupBinding();
 
         setCenter(canvas);
         setBackground(new Background(new BackgroundFill(Color.BLACK, CornerRadii.EMPTY, Insets.EMPTY)));
@@ -299,7 +299,7 @@ public class SpaceFXView extends BorderPane {
         ctx.drawImage(startImg, 0, 0);
     }
 
-    private void registerListeners() {
+    public void registerListeners() {
         Scene scene = getScene();
 
         // Setup key listener

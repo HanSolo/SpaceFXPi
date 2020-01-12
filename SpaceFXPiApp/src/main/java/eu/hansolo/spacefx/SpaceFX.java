@@ -27,10 +27,15 @@ public class SpaceFX extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        final SpaceFXView view   = new SpaceFXView();
         final Rectangle2D bounds = Screen.getPrimary().getVisualBounds();
-        Scene scene = new Scene(new SpaceFXView(), bounds.getWidth(), bounds.getHeight());
+        final double      width  = SpaceFXView.WIDTH > bounds.getWidth() ? bounds.getWidth() : SpaceFXView.WIDTH;
+        final double      height = SpaceFXView.HEIGHT > bounds.getHeight() ? bounds.getHeight() : SpaceFXView.HEIGHT;
+        Scene scene = new Scene(view, width, height);
         stage.setScene(scene);
         stage.show();
+
+        view.registerListeners();
     }
 
     public static void main(String[] args) {
