@@ -98,7 +98,7 @@ public class SpaceFXView extends BorderPane {
     private              Text                                 userName;
     private final        Image                                startImg                   = new Image(getClass().getResourceAsStream("startscreen.png"), 700 * SCALING_FACTOR, 900 * SCALING_FACTOR, true, false);
     private final        Image                                gameOverImg                = new Image(getClass().getResourceAsStream("gameover.png"), 700 * SCALING_FACTOR, 900 * SCALING_FACTOR, true, false);
-    private final        Image                                backgroundImg              = new Image(getClass().getResourceAsStream("background.jpg"), 700 * SCALING_FACTOR, 3379 * SCALING_FACTOR, true, false);
+    private final        Image                                backgroundImg              = new Image(getClass().getResourceAsStream("background.png"), 700 * SCALING_FACTOR, 3379 * SCALING_FACTOR, true, false);
     private final        Image[]                              asteroidImages             = { new Image(getClass().getResourceAsStream("asteroid1.png"), 140 * SCALING_FACTOR, 140 * SCALING_FACTOR, true, false),
                                                                                              new Image(getClass().getResourceAsStream("asteroid2.png"), 140 * SCALING_FACTOR, 140 * SCALING_FACTOR, true, false),
                                                                                              new Image(getClass().getResourceAsStream("asteroid3.png"), 140 * SCALING_FACTOR, 140 * SCALING_FACTOR, true, false),
