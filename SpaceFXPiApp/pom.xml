@@ -40,6 +40,8 @@
                 <artifactId>client-maven-plugin</artifactId>
                 <version>0.1.12-SNAPSHOT</version>
                 <configuration>
+                    <!-- Uncomment to run on Linux -->
+                    <target>linux-aarch64</target>
                     <!-- Uncomment to run on iOS:
 					<target>ios</target>
                      -->
