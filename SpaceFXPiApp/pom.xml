@@ -45,9 +45,9 @@
             <plugin>
                 <groupId>com.gluonhq</groupId>
                 <artifactId>client-maven-plugin</artifactId>
-                <version>0.1.27-SNAPSHOT</version>
+                <version>0.1.27</version>
                 <configuration>
-                    <target>linux-aarch64</target>
+<!--                    <target>linux-aarch64</target>-->
 <!--                    <verbose>true</verbose>-->
                     <mainClass>${mainClassName}</mainClass>
                 </configuration>
