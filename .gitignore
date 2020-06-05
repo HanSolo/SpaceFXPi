@@ -12,3 +12,5 @@ SpaceFXMobile.iml
 /SpaceFXMobileApp/build
 SpaceFXMobileApp/target
 /SpaceFXPiApp/target
+SpaceFXPiApp/.idea
+spacefx.iml
